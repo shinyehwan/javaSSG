@@ -2,6 +2,16 @@ package com.ll.exam;
 
 import java.util.Scanner;
 
+/**
+ * 생각의 전개 과정
+ *
+ * 첫번째, 글 쓸 때 마다 번호가 증가하네?
+ * 기억력이 필요하다 => 변수
+ * 변수는 수명이 있다. => 수명이 긴변수
+ *
+ *
+ */
+
 public class App {
     public void run() {
         System.out.println("== 명언 SSG ==");
@@ -23,6 +33,9 @@ public class App {
                     System.out.print("작가 : ");
                     String author = sc.nextLine().trim();
                     int id = ++wiseSayingLastId; // 명언 글 번호 증가
+
+                    WiseSaying wiseSaying = new WiseSaying(id, content, author);
+                    System.out.println(wiseSaying);
                     System.out.printf("%d번 명언이 등록되었습니다.\n", id);
                     break;
 
