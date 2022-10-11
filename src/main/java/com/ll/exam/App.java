@@ -71,7 +71,7 @@ public class App {
     private void remove(Rq rq) {
         // 삭제?id=523
         // URL에 입력된 id 얻기
-        int paramId = rq.getIntparam("id", 0);
+        int paramId = rq.getIntParam("id", 0);
 
         // URL에 입력된 id가 없다면 작업중지
         if (paramId == 0) {
