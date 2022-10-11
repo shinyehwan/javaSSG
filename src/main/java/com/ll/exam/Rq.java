@@ -16,6 +16,11 @@ public class Rq {
     }
     public int getIntparam(String paramName, int defaultValue) {
         String[] urlBits = url.split("\\?", 2);
+
+        if (urlBits.length == 1) {
+            return defaultValue;
+        }
+
         urlBits = urlBits[1].split("&", 2);
 
         for (String urlBit : urlBits) {
@@ -30,5 +35,10 @@ public class Rq {
         }
 
         return defaultValue;
+    }
+
+    public String getPath() {
+        String[] urlBits = url.split("\\?", 2);
+        return urlBits[0];
     }
 }
