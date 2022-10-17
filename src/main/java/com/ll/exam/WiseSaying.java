@@ -31,7 +31,7 @@ public class WiseSaying {
                 {
                     "id" : %d,
                     "content" : "%s",
-                    "id" : "%s"
+                    "author" : "%s"
                 }  
                 
                 """
