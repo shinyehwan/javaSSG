@@ -11,6 +11,7 @@ public class FileDBTest {
 
     @Test
     void 파일에_있는_JSON을_객체로_변환() {
+        Util.deleteDir("test_data");
         Util.mkdir("test_data");
         WiseSaying wiseSaying = new WiseSaying(1, "내 사전에 불가능은 없다.", "나폴레옹");
         Util.saveToFile("test_data/1.json", wiseSaying.toJson());
@@ -27,6 +28,7 @@ public class FileDBTest {
     }
     @Test
     void 파일에_있는_JSON을_맵으로_변환() {
+        Util.deleteDir("test_data");
         Util.mkdir("test_data");
         WiseSaying wiseSaying = new WiseSaying(1, "내 사전에 불가능은 없다.", "나폴레옹");
         Util.saveToFile("test_data/1.json", wiseSaying.toJson());
