@@ -2,14 +2,13 @@ package com.ll.exam;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class WiseSayingRepository {
+public class WiseSayingService {
     private List<WiseSaying> wiseSayings;
     // 가장 마지막 명언 글의 번호
     private int wiseSayingLastId;
 
-    WiseSayingRepository() {
+    WiseSayingService() {
         wiseSayings = new ArrayList<>();
         wiseSayingLastId = 0;
     }
