@@ -1,4 +1,4 @@
-# java_SSG
+# java_SSG By TDD
 
 # 요구사항
 - 영속성
